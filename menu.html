@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Menu | One on One Palace</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800&family=Playfair+Display:wght@600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css?v=20260422">
+    <script src="script.js?v=20260422" defer></script>
+</head>
+<body>
+    <header class="site-header">
+        <div class="container nav-wrap">
+            <a class="brand" href="index.html?v=20260422">One on One Palace</a>
+            <button class="nav-toggle" type="button" aria-label="Toggle navigation" aria-controls="primary-nav" aria-expanded="false">Menu</button>
+            <nav class="main-nav" id="primary-nav" aria-label="Primary navigation">
+                <a href="index.html?v=20260422">Home</a>
+                <a class="active" href="menu.html?v=20260422">Menu</a>
+                <a href="about.html?v=20260422">About Us</a>
+                <a href="reservation.html?v=20260422">Reservation</a>
+                <a href="contact.html?v=20260422">Contact</a>
+            </nav>
+        </div>
+    </header>
+
+    <main class="section container">
+        <div class="section-header">
+            <div>
+                <p class="eyebrow">Fresh picks</p>
+                <h1 class="section-title">Menu</h1>
+                <p class="page-intro">Browse our favorites, from starters and main course plates to cool drinks and classic desserts. Use the filter buttons to jump between categories.</p>
+            </div>
+        </div>
+
+        <div class="menu-tools" aria-label="Menu filters">
+            <button class="filter-btn active" type="button" data-filter="all">All</button>
+            <button class="filter-btn" type="button" data-filter="starters">Starters</button>
+            <button class="filter-btn" type="button" data-filter="main">Main Course</button>
+            <button class="filter-btn" type="button" data-filter="drinks">Drinks</button>
+            <button class="filter-btn" type="button" data-filter="desserts">Desserts</button>
+        </div>
+
+        <section class="menu-grid section" aria-label="Menu items">
+            <article class="menu-card reveal" data-category="starters">
+                <img class="menu-photo" src="images/Garlic Cheese Bread.avif" alt="Garlic cheese bread photo" loading="lazy">
+                <span class="badge">Starters</span>
+                <h3>Garlic Cheese Bread</h3>
+                <p>Crisp bread brushed with herb butter and finished with mozzarella and parmesan.</p>
+                <p class="menu-price">PKR 450</p>
+            </article>
+            <article class="menu-card reveal" data-category="starters">
+                <img class="menu-photo" src="images/Chicken Wings.avif" alt="Chicken wings photo" loading="lazy">
+                <span class="badge">Starters</span>
+                <h3>Chicken Wings</h3>
+                <p>Oven-baked wings tossed in a smoky spicy glaze with a cool dip on the side.</p>
+                <p class="menu-price">PKR 780</p>
+            </article>
+            <article class="menu-card reveal" data-category="main">
+                <img class="menu-photo" src="images/Margherita Pizza.avif" alt="Margherita pizza photo" loading="lazy">
+                <span class="badge">Main Course</span>
+                <h3>Margherita Pizza</h3>
+                <p>Fresh tomatoes, mozzarella, basil, and a clean tomato sauce on a hand-stretched base.</p>
+                <p class="menu-price">PKR 850</p>
+            </article>
+            <article class="menu-card reveal" data-category="main">
+                <img class="menu-photo" src="images/Beef Burger.avif" alt="Beef burger photo" loading="lazy">
+                <span class="badge">Main Course</span>
+                <h3>Beef Burger</h3>
+                <p>Juicy grilled beef, lettuce, cheddar, and house sauce stacked in a soft brioche bun.</p>
+                <p class="menu-price">PKR 650</p>
+            </article>
+            <article class="menu-card reveal" data-category="main">
+                <img class="menu-photo" src="images/Chicken Alfredo Pasta.avif" alt="Chicken Alfredo pasta photo" loading="lazy">
+                <span class="badge">Main Course</span>
+                <h3>Chicken Alfredo Pasta</h3>
+                <p>Creamy pasta with grilled chicken, garlic, and parmesan for a rich, hearty bowl.</p>
+                <p class="menu-price">PKR 990</p>
+            </article>
+            <article class="menu-card reveal" data-category="drinks">
+                <img class="menu-photo" src="images/Mint Lemonade.webp" alt="Mint lemonade photo" loading="lazy">
+                <span class="badge">Drinks</span>
+                <h3>Mint Lemonade</h3>
+                <p>Fresh lemon, crushed mint, and chilled fizz for a bright and refreshing glass.</p>
+                <p class="menu-price">PKR 320</p>
+            </article>
+            <article class="menu-card reveal" data-category="drinks">
+                <img class="menu-photo" src="images/Classic Mojito.avif" alt="Classic mojito photo" loading="lazy">
+                <span class="badge">Drinks</span>
+                <h3>Classic Mojito</h3>
+                <p>Lime, mint, soda, and crushed ice mixed into a crisp non-alcoholic cooler.</p>
+                <p class="menu-price">PKR 420</p>
+            </article>
+            <article class="menu-card reveal" data-category="desserts">
+                <img class="menu-photo" src="images/Chocolate Lava Cake.avif" alt="Chocolate lava cake photo" loading="lazy">
+                <span class="badge">Desserts</span>
+                <h3>Chocolate Lava Cake</h3>
+                <p>Warm cake with a molten center served with vanilla ice cream.</p>
+                <p class="menu-price">PKR 520</p>
+            </article>
+        </section>
+    </main>
+
+    <footer class="site-footer">
+        <div class="container footer-wrap">
+            <p>&copy; 2026 One on One Palace</p>
+            <a href="reservation.html?v=20260422">Book a table</a>
+        </div>
+    </footer>
+</body>
+</html>

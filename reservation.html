@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Reservation | One on One Palace</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800&family=Playfair+Display:wght@600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css?v=20260422">
+    <script src="script.js?v=20260422" defer></script>
+</head>
+<body>
+    <header class="site-header">
+        <div class="container nav-wrap">
+            <a class="brand" href="index.html?v=20260422">One on One Palace</a>
+            <button class="nav-toggle" type="button" aria-label="Toggle navigation" aria-controls="primary-nav" aria-expanded="false">Menu</button>
+            <nav class="main-nav" id="primary-nav" aria-label="Primary navigation">
+                <a href="index.html?v=20260422">Home</a>
+                <a href="menu.html?v=20260422">Menu</a>
+                <a href="about.html?v=20260422">About Us</a>
+                <a class="active" href="reservation.html?v=20260422">Reservation</a>
+                <a href="contact.html?v=20260422">Contact</a>
+            </nav>
+        </div>
+    </header>
+
+    <main class="section container">
+        <div class="section-header">
+            <div>
+                <p class="eyebrow">Reserve ahead</p>
+                <h1 class="section-title">Book Your Table</h1>
+                <p class="page-intro">Reserve your table for family dinners, celebrations, and evening gatherings. Share your details and we’ll hold a spot for you.</p>
+            </div>
+        </div>
+
+        <div class="layout-two">
+            <section class="reservation-card reveal">
+                <form class="reservation-form" id="reservation-form" novalidate>
+                    <div class="form-grid">
+                        <div class="field-group">
+                            <label for="reservation-name">Name</label>
+                            <input id="reservation-name" name="name" type="text" placeholder="Your full name" required>
+                        </div>
+                        <div class="field-group">
+                            <label for="reservation-phone">Phone</label>
+                            <input id="reservation-phone" name="phone" type="tel" placeholder="0300-1234567" required>
+                        </div>
+                        <div class="field-group">
+                            <label for="reservation-date">Date</label>
+                            <input id="reservation-date" name="date" type="date" required>
+                        </div>
+                        <div class="field-group">
+                            <label for="reservation-time">Time</label>
+                            <input id="reservation-time" name="time" type="time" required>
+                        </div>
+                        <div class="field-group">
+                            <label for="reservation-guests">Number of guests</label>
+                            <select id="reservation-guests" name="guests" required>
+                                <option value="">Select guests</option>
+                                <option value="1">1 guest</option>
+                                <option value="2">2 guests</option>
+                                <option value="3">3 guests</option>
+                                <option value="4">4 guests</option>
+                                <option value="5+">5 or more</option>
+                            </select>
+                        </div>
+                        <div class="field-group full">
+                            <label for="reservation-notes">Special requests</label>
+                            <textarea id="reservation-notes" name="notes" rows="4" placeholder="Anniversary cake, high chair, vegetarian preferences, or anything else we should know."></textarea>
+                        </div>
+                    </div>
+                    <button class="btn btn-solid" type="submit">Confirm Reservation</button>
+                    <p class="reservation-status" id="reservation-status" role="status" aria-live="polite"></p>
+                </form>
+            </section>
+
+            <aside class="info-card reveal">
+                <h2>Reservation details</h2>
+                <ul class="reservation-list">
+                    <li>We confirm tables by phone when needed.</li>
+                    <li>Peak dinner times are busiest on weekends.</li>
+                    <li>For larger groups, please book at least one day ahead.</li>
+                    <li>Walk-ins are welcome when seating is available.</li>
+                </ul>
+                <div class="hours-grid" style="margin-top: 1rem;">
+                    <div>
+                        <span class="pill">Hours</span>
+                        <p>12 pm - 12 am daily</p>
+                    </div>
+                    <div>
+                        <span class="pill">Location</span>
+                        <p><a href="https://maps.google.com/?q=MM+Alam+Road,+Lahore" target="_blank" rel="noopener noreferrer">MM Alam Road, Lahore (Open in Maps)</a></p>
+                    </div>
+                </div>
+            </aside>
+        </div>
+    </main>
+
+    <footer class="site-footer">
+        <div class="container footer-wrap">
+            <p>&copy; 2026 One on One Palace</p>
+            <a href="contact.html?v=20260422">Need help finding us?</a>
+        </div>
+    </footer>
+</body>
+</html>
